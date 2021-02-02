@@ -1,0 +1,3 @@
+[0202/175231.060:ERROR:crash_report_database_win.cc(606)] CreateDirectory C:\ProgramData\Safe Family\Logs: Acceso denegado. (0x5)
+[0202/175231.069:ERROR:registration_protocol_win.cc(130)] TransactNamedPipe: Ha terminado la canalización. (0x6D)
+[0202/175231.070:ERROR:crash_report_database_win.cc(606)] CreateDirectory C:\ProgramData\Safe Family\Logs: Acceso denegado. (0x5)
