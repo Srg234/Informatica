@@ -1,12 +1,10 @@
-let contador= 1
-if (contador=null){
-localStorage.setItem("contador",JSON.stringify(contador))
-alert("ha entrado 1 vez a esta página")}
+let variableeeee= 1
 
-else{
-contador=JSON.parse(localStorage.getItem("contador"))
-contador=contador+1
-alert( `usted ha ingresado ${contador} veces a esta página`)
-localStorage.setItem("contador",JSON.stringify(contador))
-}
+
+
+variableeeee=JSON.parse(localStorage.getItem("variableeeee"))
+variableeeee=variableeeee+1
+alert( `usted ha ingresado ${variableeeee} veces a esta página`)
+localStorage.setItem("variableeeee",JSON.stringify(variableeeee))
+
 
