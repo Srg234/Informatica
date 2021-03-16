@@ -14,7 +14,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>boh</title>
+        <title>calendar</title>
     </head>
 
     <body>
@@ -27,7 +27,54 @@
             <input type="date" name="urlImagen">
             <input type="submit">
         </form>
+        <form action="" id="formularioDelete">
+            Nombre tarea a borrar
+            <input type="text" name="nombre">
+            <input type="submit">
         </form>
-        <table id="lista"></table>
+        <table id="listaTareas"></table>
+        <style>
+            table {
+                border-radius: 20px;
+                border: solid 5px black;
+                gap: 20px;
+                border-collapse: collapse;
+        
+                padding: auto;
+                margin: 30px;
+            }
+        
+            th {
+                border-radius: 20px;
+                border: solid 5px black;
+        
+                border-collapse: collapse;
+        
+                padding: auto;
+        
+            }
+        
+            tr {
+        
+                border-radius: 20px;
+                border: 5px solid black;
+                text-align: center;
+                border-collapse: collapse;
+        
+                padding: auto;
+        
+            }
+        
+            td {
+        
+                border-radius: 20px;
+                border: 5px solid black;
+                text-align: center;
+                border-collapse: collapse;
+        
+                padding: auto;
+        
+            }
+        </style>
         <script src="tarealistatareas.js"></script>
     </body>

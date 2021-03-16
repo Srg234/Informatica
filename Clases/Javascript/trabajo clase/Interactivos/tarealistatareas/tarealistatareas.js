@@ -4,7 +4,8 @@ let lista = [
     {Materia:"Matemáticas", Descripción:"Evaluación f. raciones, exponenciales y polinómicas",Fecha:"2021-03-02"},
 ]
 
-let tabla = document.querySelector('#lista')
+
+let tabla = document.querySelector('#listaTareas')
 function llenarTabla(){
     let contenidoTabla = '<tr><th>Materia</th><th>Descripción</th><th>Fecha</th></tr>'
     for (elemento of lista){
@@ -13,7 +14,7 @@ function llenarTabla(){
     }
     tabla.innerHTML = contenidoTabla;
 }
-
+localStorage.setItem("listadetareas",JSON.stringify(lista))
 let form = document.querySelector("#formularioAdd");
 
 function addElement(){
@@ -29,6 +30,7 @@ function addElement(){
     console.log(elementoNuevo)
 
     lista.push(elementoNuevo)
+    localStorage.setItem("listadetareas",JSON.stringify(lista))
     llenarTabla();
     return false;
 }
@@ -36,5 +38,27 @@ function addElement(){
 form.onsubmit = addElement;
 
 
+let formBorrar = document.querySelector("#formularioDelete");
 
 llenarTabla();
+
+function deletePlanet(){
+
+let nombrePlanetaABorrar = document.querySelector("#formularioDelete input[name=nombre]").value
+
+    
+    console.log("Ahora voy a borrar la siguiente tarea");
+    console.log(nombrePlanetaABorrar)
+
+    
+    let aBorrar = planetas.findIndex(planeta => planeta.nombre == nombrePlanetaABorrar);
+   
+    if(aBorrar == -1) alert("Tarea no encontrada");
+   
+    planetas.splice(aBorrar, 1);
+    localStorage.setItem("listadetareas",JSON.stringify(lista))
+    llenarTabla();
+    
+    return false;
+}
+formBorrar.onsubmit = deletePlanet;

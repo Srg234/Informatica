@@ -1,10 +1,10 @@
-let variableeeee= 1
+let variableeee= 1
 
 
 
-variableeeee=JSON.parse(localStorage.getItem("variableeeee"))
-variableeeee=variableeeee+1
-alert( `usted ha ingresado ${variableeeee} veces a esta página`)
-localStorage.setItem("variableeeee",JSON.stringify(variableeeee))
+variableeee=JSON.parse(localStorage.getItem("variableeee"))
+variableeee=variableeee+1
+alert( `usted ha ingresado ${variableeee} veces a esta página`)
+localStorage.setItem("variableeee",JSON.stringify(variableeee))
 
 
