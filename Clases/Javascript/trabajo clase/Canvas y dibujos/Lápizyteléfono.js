@@ -56,7 +56,11 @@ ctx.fillRect(39,95,9, 9)
 ctx.fillStyle = "blue"
 ctx.fillRect(54,71,39, 33)
 
-
+ctx.beginPath()
+ctx.fillArc = "red"
+ctx.arc(300, 23, 23, Math.PI*2.0, 0* Math.PI,);
+ctx.stroke()
+ctx.fill()
 
 
 ctx.endPath()
