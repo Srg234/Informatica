@@ -54,18 +54,18 @@ ctx.lineTo(xCentral+3,41+yCentral)
 
 ctx.stroke()}
 let xBase=45
+for(let xBase=45; xBase < 361; xBase= xBase+45){
 
-do{
     DrawPawn(xBase,45)
     ctx.fillStyle = "#F9E4B7"
     ctx.fill()
-    xBase=xBase+45}
-    while(xBase<361)
-xBase=45
-do{
-    DrawPawn(xBase,270)
+    }
+    
+
+for(let xBase2=45; xBase2< 361; xBase2= xBase2+45){
+    DrawPawn(xBase2,270)
     ctx.fillStyle="black"
     ctx.fill()
     ctx.stroke()
-    xBase=xBase+45}
-    while(xBase<361)
+    }
+    
