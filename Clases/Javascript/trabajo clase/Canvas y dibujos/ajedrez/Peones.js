@@ -24,8 +24,7 @@ straightline(Xcambiante)
 Xcambiante=Xcambiante+90}
 while(Xcambiante<361)
 
-//4 pixeles de espacio entre cuadro y peón, base de 42 pixeles así que se cambia a 5???
-//xCentral=45
+
 function DrawPawn(xCentral,yCentral){
 ctx.beginPath()
 ctx.lineWidth= 1
@@ -68,4 +67,7 @@ for(let xBase2=45; xBase2< 361; xBase2= xBase2+45){
     ctx.fill()
     ctx.stroke()
     }
+
+
+    DrawPawn(300,350)
     
