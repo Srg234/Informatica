@@ -18,15 +18,16 @@ SecondSquareY=SecondSquareY+90*SizeSelect}
 while(FirstSquareY<70*5*SizeSelect)}
 //si el tamaño es mayor a 3 no se centra bien en el tablero por lo que no se dibuja el tablero(Si logro descubrir cómo lo arreglaré más tarde)
 //cambie SizeSelect para cambiar el tamaño de los peones
-let SizeSelect= 1
+let SizeSelect= 4
 
 let Xcambiante=25
 
+
 if(SizeSelect<=3&&SizeSelect>=1){
-do{
-straightline(Xcambiante,SizeSelect)
-Xcambiante=Xcambiante+90*SizeSelect}
-while(Xcambiante<70*5*SizeSelect)}
+    do{
+    straightline(Xcambiante,SizeSelect)
+    Xcambiante=Xcambiante+90*SizeSelect}
+    while(Xcambiante<70*5*SizeSelect)}
 
 
 function DrawPawn(xCentral,yCentral,SizeSelect,ColorSelect){
